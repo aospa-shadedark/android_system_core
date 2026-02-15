@@ -1224,7 +1224,7 @@ static void SetPropIfEmpty(const char* name, const char* value) {
 }
 
 static void SetVbmetaBootProps() {
-    const std::string update = GetProperty("persist.sys.vbmeta.update", "true");
+    const std::string update = GetProperty("persist.sys.vbmeta.update", "false");
     if (update == "false") {
         return;
     }
